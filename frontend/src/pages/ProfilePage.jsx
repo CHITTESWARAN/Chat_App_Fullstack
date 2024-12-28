@@ -115,7 +115,7 @@ const ProfilePage = () => {
           {/* Member Since */}
           <div className="flex justify-between mb-4">
             <h2 className="text-md">Member Since</h2>
-            <h2 className="text-md">{authUser.createdAt.slice(0, 10)}</h2>
+            <h2 className="text-md">{authUser?.createdAt ? authUser.createdAt.slice(0, 10) : 'Loading...'}</h2>
           </div>
           <hr className='text-yellow-700 p-4' />
 
