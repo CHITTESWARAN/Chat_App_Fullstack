@@ -47,7 +47,7 @@ const LoginPage = () => {
                   </div>
                   <input
                     type="email"
-                    className="input-bordered w-full pl-10"
+                    className="input-bordered w-full pl-10 h-12"
                     placeholder="chitteswarancj06@gmail.com"
                     value={formData.email}
                     onChange={(e) =>
@@ -64,10 +64,10 @@ const LoginPage = () => {
                 </label>
                 <div className="relative">
                   <div className="flex items-center">
-                    <Lock className="size-5 text-base-content/40" />
+                    <Lock className="size-5 mt-4 text-base-content/40" />
                     <input
                       type={showPassword ? 'text' : 'password'}
-                      className="input-bordered w-full pl-10"
+                      className="input-bordered w-full pl-10  h-12"
                       placeholder="Enter your password"
                       required
                       value={formData.password}

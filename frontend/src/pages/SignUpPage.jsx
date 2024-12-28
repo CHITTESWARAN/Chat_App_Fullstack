@@ -33,7 +33,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="min-h-screen m-auto grid lg:grid-cols-2">
+    <div className="min-h-screen m-auto">
       {/* Left side */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
@@ -49,6 +49,7 @@ const SignUpPage = () => {
               </p>
             </div>
           </div>
+
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Full Name */}
@@ -62,7 +63,7 @@ const SignUpPage = () => {
                 </div>
                 <input
                   type="text"
-                  className="input-bordered w-full pl-10"
+                  className="input-bordered w-full pl-10 h-12"
                   placeholder="John Doe"
                   value={formData.fullName}
                   onChange={(e) =>
@@ -71,6 +72,7 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
+
             {/* Email */}
             <div>
               <label className="label">
@@ -82,7 +84,7 @@ const SignUpPage = () => {
                 </div>
                 <input
                   type="email"
-                  className="input-bordered w-full pl-10"
+                  className="input-bordered w-full pl-10  h-12"
                   placeholder="chitteswarancj06@gmail.com"
                   value={formData.email}
                   onChange={(e) =>
@@ -91,6 +93,7 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
+
             {/* Password */}
             <div>
             
@@ -100,11 +103,11 @@ const SignUpPage = () => {
               <div className="relative">
               <div className="flex">
                  
-                <Lock className="size-5 text-base-content/40" />
+                <Lock className="mt-4 size-5 text-base-content/40" />
               
                 <input
                   type={showPassword ? "text" : "password"}
-                  className="input-bordered w-full pl-10"
+                  className="input-bordered w-full pl-10 h-12"
                   required
                   value={formData.password}
                   onChange={(e) =>

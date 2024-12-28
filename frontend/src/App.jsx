@@ -35,7 +35,7 @@ const App = () => {
     <div data-theme={theme}>
       <Navbar/>
       <Routes>
-        <Route path="/" element={authUser?<HomePage/>:<Navigate to="/login"/>}/>
+        <Route path="/" element={authUser?<HomePage/>:<Navigate to="/signup"/>}/>
         <Route path="/signup" element={!authUser?<SignUpPage/>:<HomePage/>}/>
         <Route path="/login" element={!authUser?<LoginPage/>:<HomePage/>}/>
         <Route path="/settings" element={<SettingsPage/>}/>

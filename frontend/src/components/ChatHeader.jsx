@@ -7,14 +7,14 @@ const ChatHeader = () => {
     const {selectedUser,setSelectedUser}=useChatStore();
     const {onlineUsers}=useAuthStore();
   return (
-    <div className=' border-b h-16 border-base-300  border p-2 flex justify-between items-center'>
+    <div className=' border-b bg-accent h-16 border-base-300  border p-2 flex justify-between items-center'>
         <div className='flex items-center gap-4'>
             <div className='flex items-center gap-3'>
              {/*Avathar*/}
             </div>
             <div className='avathar'>
-                <div className='h-10 w-10  rounded-full relative'>
-                    <img src={selectedUser.profilePic|| "https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"} alt={selectedUser.fullName} className='object-cover bg-white overflow-hidden rounded-full' />
+                <div className='size-10 rounded-full relative'>
+                    <img src={selectedUser.profilePic|| "https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"} alt={selectedUser.fullName} className=' w-10 h-10 object-cover bg-white overflow-hidden rounded-full' />
 
                 </div>
 

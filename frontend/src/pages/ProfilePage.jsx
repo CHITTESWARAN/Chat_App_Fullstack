@@ -39,7 +39,7 @@ const ProfilePage = () => {
   
   return (
     <div className="bg-gray-800 min-h-screen py-10">
-      <div className="w-[65%] m-auto bg-gray-900 shadow-lg p-8 rounded-xl">
+      <div className="w-[60%] m-auto bg-gray-900 shadow-lg p-8 rounded-xl">
         
 
         {/* Profile Header */}

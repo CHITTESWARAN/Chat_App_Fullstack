@@ -6,14 +6,14 @@ import {LogOut, MessageSquare, Settings, SettingsIcon, User } from 'lucide-react
 const Navbar = () => {
     const {logout,authUser}=useAuthStore()
   return (
-    <div className='bg-slate-800  flex justify-between'>
+    <div className='flex justify-between shadow-slate-200'>
        <Link to={"/"} className='flex items-center gap-2.5  hover:opacity-80 transition-all'>
       <div className='logo flex p-2 gap-0.5'>
        
         <div className='bg-[white] bg-opacity-15'>
-       <MessageSquare className='text-white'></MessageSquare>
+       <MessageSquare ></MessageSquare>
        </div>
-        <h1 className='text-lg font-bold text-white'>Chatty</h1>
+        <h1 className='text-lg font-bold '>Chatty</h1>
 
       </div>
       </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='flex items-center justify-center gap-2 p-2'>
       
       <Link to={"/Settings"} className="hover:opacity-80 transition-all">
-        <div className='flex gap-2 text-white'>
+        <div className='flex gap-2 '>
         <SettingsIcon className="w-5 h-5"></SettingsIcon>
         <span className='hidden sm:inline'>Settings</span>
         </div>
@@ -33,14 +33,14 @@ const Navbar = () => {
         <div className='flex justify-center gap-2 items-center'>
           
           <Link to={"/profile"} className="hover:opacity-80 transition-all">
-          <div className='flex gap-2 text-white'>
+          <div className='flex gap-2'>
            <User className="w-5 h-5"></User>
            <span className='hidden sm:inline'>Profile</span>
           </div>
           </Link>
           
           
-          <button onClick={logout} className='flex gap-2 text-white'>
+          <button onClick={logout} className='flex gap-2 '>
            <LogOut className="w-5 h-5"></LogOut>
            <span className='hidden sm:inline'>Logout</span>
           </button>
