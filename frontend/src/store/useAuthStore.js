@@ -9,7 +9,7 @@ const BASE_URl=import.meta.env.MODE==="development"?"http://localhost:5001":"/"
 export const useAuthStore =create((set,get)=>({
     authUser:null,
     isSigning:false,
-    isLoggingIng:false,
+    isLoggingIn:false,
     isUpdatingProfile:false,
     isCheckingAuth:true,
     onlineUsers:[],
